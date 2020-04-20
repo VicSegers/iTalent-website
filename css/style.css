@@ -1,3 +1,7 @@
+.bg-primary {
+  background-color: #0073b2 !important;
+}
+
 hr {
   max-width: 60px;
   border-width: 3px;
@@ -20,6 +24,25 @@ header {
 section {
   padding-top: 75px;
   min-height: 100vh;
+}
+
+h3 {
+  padding-top: 60px;
+  font-size: 1.5rem;
+}
+
+.latex {
+  display: inline-block;
+  height: 1em;
+  fill: #212529;
+}
+
+nav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+}
+
+nav a.navbar-brand {
+  color: #0073b2 !important;
 }
 
 nav div#navbarNavDropdown {
