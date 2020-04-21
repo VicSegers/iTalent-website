@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Vic Segers - iTalent Portfolio" />
-    <meta name="author" content="Vic Segers" />
-    <title>Vic Segers - iTalent portfolio</title>
-    <link href="img/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
-    <link href="img/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="iTalent Portfolio" name="description" />
+    <meta content="Vic Segers" name="author" />
+    <title>Vic Segers - iTalent Portfolio</title>
+    <link href="images/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="images/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet" />
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand text-uppercase" href="#page-top">Vic Segers</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#voorstelling">Voorstelling</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#overzicht">Overzicht</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#reflectie">Reflectie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Vic Segers</a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#voorstelling">Voorstelling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#overzicht">Overzicht</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#reflectie">Reflectie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!-- HEADER -->
-    <header class="masthead text-center text-black d-flex">
+    <!-- Header -->
+    <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
@@ -50,431 +59,590 @@
             <hr />
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Een portfolio website in kader van het vak iTalent op PXL</p>
-            <div class="row-lg-4 mx-auto">
-              <a href="https://www.pxl.be/" target="_blank">
-                <img alt="logo PXL" id="logo-pxl" src="assets/images/companies/pxl_logo.png">
-              </a>
-            </div>
+            <p class="text-faded mb-5">Mijn portfolio website voor het vak iTalent op Hogeschool PXL</p>
+            <a href="https://www.pxl.be/" target="_blank">
+              <img alt="logo-PXL" id="pxl-logo" src="images/companies/pxl_logo.png" class="rounded-circle" />
+            </a>
           </div>
         </div>
       </div>
     </header>
-    <!-- VOORSTELLING -->
-    <section class="bg-secondary" id="voorstelling">
+    <!-- Voorstelling -->
+    <section class="bg-primary" id="voorstelling">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Voorstelling</h2>
-            <hr />
-            <p class="text-faded mb-4">TODO: voorstelling</p>
+            <hr class="light my-4" />
+            <img id="profielfoto" src="images/Vic_Segers.jpg" />
+            <hr class="light my-4" />
+            <p class="text-faded mb-4">Ik ben Vic Segers, een derdejaars student Toegepaste Informatica aan Hogeschool PXL met applicatieontwikkeling als afstudeerrichting en AI & Robotics als keuzetraject. Buiten school speel ik ook basketbal in een ploeg en programmeer ik voor mijn persoonlijke projecten.</p>
+            <p class="text-faded mb-4">Momenteel speel ik reeds 12 jaar basketbal bij de Bilzerse BC. Dit heeft mij niet enkel geholpen met mijn fysieke, maar ook mijn mentale gezondheid. Hieruit leerde ik samenwerken met anderen, mezelf uiten en rekening houden met mijn ploeggenoten.</p>
+            <p class="text-faded mb-4">Mijn huidige interesses spelen zich vooral af rond AI en robotica. Dit is voornamelijk ten gevolge van het keuzetraject dat ik volg. Voor praktische uitwerkingen verkies ik echter robotica boven bijvoorbeeld machine learning. Om diezelfde reden heb ik ervoor gekozen om gedurende mijn IT-project en stage deze tak van de IT verder toe te passen en aan te leren. Gedurende deze projecten leerde ik om code te schrijven die ervoor zorgde dat een drone op onafhankelijke basis kan rondvliegen en zijn omgeving in kaart kan brengen.</p>
+            <p class="text-faded mb-4">Van nature ben ik ook een zeer nieuwsgierig persoon. Dit uit zich onder meer door de nieuwe technologieën die ik onder de knie probeer te krijgen. Zo ben ik momenteel LaTeX aan het leren, hetgeen ik onder andere gebruikt heb om mijn portfolio mee te schrijven. Ik ben ook steeds op zoek naar nieuwe informatie en technologieën om mijn kennis te verruimen en dit later te kunnen toepassen wanneer dit nuttig wordt geacht. Ik probeer ook steeds de kennis van mijn medestudenten te raadplegen wanneer ik zelf geen oplossing kan vinden en kan deze kennis vervolgens ook toepassen in projecten.</p>
+            <p class="text-faded mb-4">Wanneer ik voor een probleem kom te staan, zal ik steeds eerst onderzoeken wat het beste plan van aanpak is, om me er vervolgens volledig in te storten. Wanneer een project me echter interesseert, kan ik me er zelfs dermate in vastbijten dat ik zelfs tijdens mijn vrije tijd er nog aan verder werk, om zo het best mogelijke resultaat te bekomen.</p>
+            <p class="text-faded mb-4">Volgend jaar zal ik schakelen naar een master in de toegepaste informatica. Initieel was ik aan het twijfelen of ik dit wel zou doen, omdat het zeker geen vereiste is om aan een job te geraken - aangezien er voor informatici meer dan voldoende jobs te vinden zijn -, maar nu wil ik het zeker een kans geven. De redenen waarom ik toch gekozen heb om mijn opleiding verder te zetten zijn ten eerste - en vooral - omdat ik er de kans toe krijg. Ten tweede heb ik mijn bachelor in modeltraject kunnen afwerken, dus verwacht ik ook geen uitgesproken problemen met mijn verdere studies. Ten slotte wil ik het ook proberen om zeker te zijn dat ik later geen spijt zal hebben dat ik het niet geprobeerd zou hebben. Uiteraard zal deze opleiding mijn kennis en ervaringen rond AI en robotica uitbreiden. Ook zal deze opleiding een aantal uitdagingen met zich meedragen. Mijn wiskunde zal ten eerste terug herhaald moeten worden aangezien ik hier al van het middelbaar niet meer echt mee bezig ben geweest. Ook zal ik terug veel theoretische leerstof moeten verwerken, hetgeen in mijn huidige, professionele opleiding minder veel aan bod kwam.</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- OVERZICHT -->
+    <!-- Overzicht -->
     <section id="overzicht">
       <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2>Overzicht</h2>
-                  <hr />
-              </div>
-          </div>
-      </div>
-      <!-- INNOVATIE -->
-      <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3>Innovatie</h3>
-            <hr class="small-hr" />
+            <h2 class="section-heading">Overzicht</h2>
+            <hr class="my-4" />
           </div>
         </div>
-        <table class="table-striped table">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-medal text-primary mb-3 sr-icon-2"></i>
+              <h3 class="mb-3">Innovatie</h3>
+              <p class="text-muted mb-0">Binnen dit domein gaat de student zelf of in een (multidisciplinair) team actief opzoek naar nieuwe kennis en vaardigheden in functie van innovatie, onderzoek en ondernemen waarbij de verworven kennis en/of vaardigheden toegepast kunnen worden in projecten.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-globe text-primary mb-3 sr-icon-4"></i>
+              <h3 class="mb-3">Internationalisering</h3>
+              <p class="text-muted mb-0">Binnen dit domein wordt het perspectief op IT in een internationale context verruimd en wordt er rekening gehouden met de internationale context van het vakgebied.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-atom text-primary mb-3 sr-icon-4"></i>
+              <h3 class="mb-3">Persoonlijke ontwikkeling</h3>
+              <p class="text-muted mb-0">Binnen dit domein wordt er een e-portfolio aangelegd met daarin een persoonlijke en doelgerichte verzameling van materiaal dat de inspanningen, vooruitgang en prestaties in een bepaald domein weergeeft. Het hoofddoel van het portfolio is om te kunnen reflecteren over voortgang van het eigen leerproces als beginnend professional.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              <h3 class="mb-3">Seminaries</h3>
+              <p class="text-muted mb-0">Binnen dit domein wordt het perspectief op IT in een business context verruimd. Via seminaries en workshops wordt er kennis gemaakt met nieuwe technieken, technologieën, … of wordt er geleerd hoe bestaande technieken, technologieën, … toegepast kunnen worden in projecten.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-cog text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">Extra's</h3>
+              <p class="text-muted mb-0">Binnen dit domein wordt het engagement en de empassie getoond voor de hogeschool, de opleiding en medestudenten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5" />
+      <div class="container">
+        <table class="table-striped table" id="#tabel1">
           <thead>
             <tr>
-              <th>Beschrijving</th>
-              <th>Bedrijf</th>
+              <th>Domein</th>
+              <th width="70%">Beschrijving</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <h4>Innovatieroute - Blockchain</h4>
-                <p>De eerste dag kregen we een introductie over blockchain en wat meer informatie over Ethereum van Maurice Dalderup, een ex-PXL-student met blockchain architect als functie bij Trase. De andere twee dagen kregen we uitleg over Hyperledger Fabric en moesten we een case per twee uitwerken hierover. De laatste dag werd het seminarie gegeven door Hadrien van Durme, een blockchain consultant bij Trase.<p>
-                <ul>
-                  <li>Locatie: Corda 7, Project Room</li>
-                  <li>Datum: 25/09/2019 - 27/09/2019</li>
-                  <li>Duur: Elke dag van 09:00 tot 17:00</li>
-                </ul>
+                <i class="fas fa-4x fa-cog text-primary mb-3 sr-icon-3"></i>
               </td>
-              <td>
-                <a href="https://www.trase.be" target="_blank">
-                  <img alt="logo Trase" id="logo-trase" src="assets/images/companies/trase_logo.jpg" class="rounded-circle" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Hackathon - Carethon</h4>
-                <p>Tijdens de door PXL geörganiseerde hackathon heb ik gekozen voor de uitdaging van Ambulance Wens, hiervoor werd een prototype en een (deels) uitgewerkte applicatie verwacht. Ambulance Wens vervult wensen van mensen waarvan het levenseinde nabij is en niet meer mobiel zijn of medische hulp nodig hebben.<p>
-                <ul>
-                  <li>Locatie: Corda 3, Cegeka</li>
-                  <li>Datum: 20/02/2020 - 21/02/2020</li>
-                  <li>Duur: Elke dag van 09:00 tot 17:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://ambulancewens.be" target="_blank">
-                  <img alt="logo Ambulance Wens" src="assets/images/companies/ambulance_wens_logo.png" />
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- INTERNATIONALISERING -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3>Internationalisering</h3>
-            <hr class="small-hr" />
-          </div>
-        </div>
-        <table class="table-striped table">
-          <thead>
-            <tr>
-              <th>Beschrijving</th>
-              <th>Bedrijf</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <h4>Studiereis - Berlijn (Technische Universität Berlin)</h4>
-                <p>De studiereis waaraan ik heb deelgenomen nam plaats in Berlijn. Hier waren verschillende culturele activiteiten geregeld zoals een tour in de stad, een rondleiding in een gevangenis door een ex-gevangene en een tour in een luchthaven. Het geplande bezoek en  de seminaries in TU Berlin zijn jammer genoeg niet door kunnen gaan.<p>
-                <ul>
-                  <li>Locatie: Berlijn</li>
-                  <li>Datum: 14/02/2020 - 18/03/2020</li>
-                  <li>Duur: Elke dag van 09:00 tot 17:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.tu-berlin.de/menue/home/" target="_blank">
-                  <img alt="logo TU Berlin" src="assets/images/companies/tu_berlin_logo.svg" />
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- PERSOONLIJKE ONTWIKKELING -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3>Persoonlijke ontwikkeling</h3>
-            <hr class="small-hr" />
-          </div>
-        </div>
-        <table class="table-striped table">
-          <thead>
-            <tr>
-              <th>Beschrijving</th>
-              <th>Bedrijf</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <h4>Projectweek 18-19</h4>
-                <p>De projectweek was een druk ingeplande week met verschillende seminaries, infosessies en workshops. Het doel was om informatie te krijgen over het verloop van de studierichting, de kennismaking met groep voor het research project en jezelf leren kennen.<p>
-                <ul>
-                  <li>Locatie: PXL</li>
-                  <li>Datum: 11/02/2019 - 15/02/2019</li>
-                  <li>Duur: Elke dag van 09:00 tot 17:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.pxl.be" target="_blank">
-                  <img alt="logo PXL" src="assets/images/companies/pxl_logo.png" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>POP-sessies</h4>
-                <p>TODO<p>
-                <ul>
-                  <li>Locatie: PXL</li>
-                  <li>Datum: 20/02/2019</li>
-                  <li>Duur: 08:30 - 15:30</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.pxl.be" target="_blank">
-                  <img alt="logo PXL" src="assets/images/companies/pxl_logo.png" />
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- SEMINARIES -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3 class="section-heading">Seminaries</h3>
-            <hr class="small-hr" />
-          </div>
-        </div>
-        <table class="table-striped table">
-          <thead>
-            <tr>
-              <th>Beschrijving</th>
-              <th>Bedrijf</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <h4>AariXa - Docker for Dev and Ops</h4>
-                <p>Het seminarie werd gegeven door Sven Luts, een software engineer bij AariXa. De spreker gaf een introductie over Docker en hoe het achterliggend werkt. En door middel van demo's werden de nodige commando's duidelijk gemaakt aan ons.<p>
-                <ul>
-                  <li>Locatie: PXL, B141</li>
-                  <li>Datum: 27/02/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.aarixa.be" target="_blank">
-                  <img alt="logo AariXa" src="assets/images/companies/aarixa_logo.png" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Belfius - Introduction to Artificial Intelligence Through Practice</h4>
-                <p>We kregen een introductie tot artificiële intelligentie door Jerome Fortias, AI practice leader bij BrightKnight. Er kwamen verschillende onderwerpen aan bod zoals de geschiedenis en de pilaren van AI, wat NoAI is en verschillende demonstraties.<p>
-                <ul>
-                  <li>Locatie: PXL, B151</li>
-                  <li>Datum: 20/03/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.belfius.be" target="_blank">
-                  <img alt="logo Belfius" src="assets/images/companies/belfius_logo.png" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Eurofins - Testing met Robot Framework</h4>
-                <p>Sepp Van Cauwenbergh, technical coach bij Eurofins, gaf een zeer praktisch seminarie over automatisch testen schrijven. Omdat er niet veel plaatsen waren, was de mogelijkheid er om veel oefeningen te maken en klassikaal te overlopen.<p>
-                <ul>
-                  <li>Locatie: PXL, Student Hub</li>
-                  <li>Datum: 27/03/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.eurofins.be" target="_blank">
-                  <img alt="logo Eurofins" src="assets/images/companies/eurofins_logo.png" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Yappa - Piño: onder de schil, workshop introductie chatbot</h4>
-                <p>Het seminarie vond plaats in het bedrijf van Yappa, gelegen te Bilzen. Hier gaf Wesley Lancel, hub lead development bij Yappa, uitleg over Piño, de intern gebruikte chat assistant voor Slack. Samen met behulp van een demo werd er verteld hoe Piño NLP gebruikt en hoe we zo een chatbot zelf konden maken.<p>
-                <ul>
-                  <li>Locatie: Yappa, Eikaart 6 Bilzen</li>
-                  <li>Datum: 03/04/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.yappa.be/" target="_blank">
-                  <img alt="logo Yappa" src="assets/images/companies/yappa_logo.png" class="rounded-circle" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Quality@Speed - Performance testing: een levensnoodzakelijk iets</h4>
-                <p>Er werd zowel een introductie tot performance als een introductie tot een performance-tool gegeven door Lisa-Marie Van Bel, functional analyst/consultant bij Quality@Speed, en Gil Vanderhoven, ICT-consultat bij Quality@Speed. Na deze introducties was er een workshop om de geziene informatie over bijvoorbeeld Jmeter, praktisch te benaderen.<p>
-                <ul>
-                  <li>Locatie: PXL, B241</li>
-                  <li>Datum: 24/04/2019</li>
-                  <li>Duur: 08:30 - 12:30</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.qualityatspeed.be" target="_blank">
-                  <img alt="logo Quality@Speed" src="assets/images/companies/quality_at_speed_logo.png" id="quality-at-speed-logo" class="rounded-circle" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Ordina - IT Security & Data Privacey awareness session</h4>
-                <p>Tom Degol en Jelle Dauwe, security consultatns bij Ordina, gaven een theoretisch seminarie over information security awareness en GDPR. De aangehaalde onderwerpen waren zowel op professioneel vlak als in het privéleven nuttig. En om iedereen bij de les te houden hielden ze af en toe een quiz over de gegeven informatie.<p>
-                <ul>
-                  <li>Locatie: PXL, B151</li>
-                  <li>Datum: 15/05/2019</li>
-                  <li>Duur: 10:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.ordina.be" target="_blank">
-                  <img alt="logo Ordina" src="assets/images/companies/oridna_logo.png" class="rounded-circle" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>VRT NWS - Facebook en ik</h4>
-                <p>TODO<p>
-                <ul>
-                  <li>Locatie: PXL, Congress</li>
-                  <li>Datum: 22/05/2019</li>
-                  <li>Duur: 08:00 - 10:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.vrt.be/vrtnws" target="_blank">
-                  <img alt="logo VRT NWS" src="assets/images/companies/vrt_nws_logo.jpg" class="rounded-circle" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Infofarm - Internet of Things</h4>
-                <p>Het seminarie van Infofarm ging over IoT, een zeer populair onderwerp tegenwoordig. De verschillende aangehaalde onderdelen waren het visualiseren van sensor data, anomaliedetectie en wijzigingsdetectie. De nadruk lag vooral op het verschil in bruikbaarheid tussen verwerkte en onverwerkte data.<p>
-                <ul>
-                  <li>Locatie: PXL, B334</li>
-                  <li>Datum: 13/11/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://infofarm.be" target="_blank">
-                  <img alt="logo Infofarm" src="assets/images/companies/infofarm_logo.png" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Ericsson - Inleiding to 5G</h4>
-                <p>Het door Tijs Van den brande en Serge Vanhoffelen, customer project managers 5G POC bij Ericsson, gegeven seminarie ging niet enkel over de werking van 5G, maar ook over de geschiedenis ervan, dus hoe het van 1G naar 5G is gegaan en de werking van elke tussenstap. Er waren geen demo's of andere praktische elementen voorzien, enkel de theorie werd gegeven.<p>
-                <ul>
-                  <li>Locatie: PXL, B323</li>
-                  <li>Datum: 27/11/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.ericsson.com/" target="_blank">
-                  <img alt="logo Ericsson" src="assets/images/companies/ericsson_logo.png" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h4>PwC - Secure development</h4>
-                <p>Het seminarie over secure development was opgesplits in twee delen, een theoretisch en een praktisch. Er werd eerst uitleg gegeven over er rekening kan gehouden worden met het ontwikkelen van veilige software in korte cycli oftewel sprints. In het tweede deel konden we deze technieken toepassen in een VM dat door PwC was voorbereid.<p>
-                <ul>
-                  <li>Locatie: PXL, B214</li>
-                  <li>Datum: 04/12/2019</li>
-                  <li>Duur: 09:00 - 12:00</li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.pwc.be" target="_blank">
-                  <img alt="logo PwC" src="assets/images/companies/pwc_logo.png" />
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- EXTRA'S -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3>Extra's</h3>
-            <hr class="small-hr" />
-          </div>
-        </div>
-        <table class="table-striped table">
-          <thead>
-            <tr>
-              <th>Beschrijving</th>
-              <th>Bedrijf</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
               <td>
                 <h4>Sinterklaas programming challenge</h4>
-                <p>Tijdens het vak Java Advanced, kregen we de mogelijkheid om aan een programming challenge deel te nemen. Er moest aan de hand van een gegeven technologie een probleem opgelost worden voor de sint. Ik heb niet enkel deelgenomen aan deze challenge, maar ik heb hiervoor ook een prijs gewonnen.<p>
-                <ul>
-                  <li>Locatie: n.v.t.</li>
-                  <li>Datum: 03/12/2018 - 04/12/2018</li>
-                  <li>Duur: 2 uur</li>
-                </ul>
+                <p>Tijdens het vak Java Advanced, kregen we de mogelijkheid om aan een programming challenge deel te nemen. Er moest aan de hand van een gegeven technologie een probleem opgelost worden voor de sint. Ik heb niet enkel deelgenomen aan deze challenge, maar ik heb voor mijn resultaat ook een prijs gewonnen.</p>
+                <h6>Locatie: n.v.t</h6>
+                <h6>Datum: 03/12/2018 - 04/12/18</h6>
+                <h6>Duur: 2 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.pxl.be" target="_blank">
+                  <img alt="logo PXL" src="images/companies/pxl_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-atom text-primary mb-3 sr-icon-3"></i>
               </td>
               <td>
-                <a href="https://www.pxl.be" target="_blank">
-                  <img alt="logo PXL" src="assets/images/companies/pxl_logo.png" />
-                </a>
+                <h4>Projectweek 18-19</h4>
+                <p>De projectweek was een druk ingeplande week met verschillende seminaries, infosessies en workshops. Het doel van deze week was om informatie te verkrijgen over het beloop van de studierichting, kennismaken met ieders groep voor het research project en jezelf beter leren kennen op sociaal vlak in het kader van groepsprojecten.</p>
+                <h6>Locatie: PXL</h6>
+                <h6>Datum: 11/02/2019 - 15/02/2019</h6>
+                <h6>Duur: 26 uur</h6>
               </td>
+              <th>
+                <a href="https://www.pxl.be" target="_blank">
+                  <img alt="logo PXL" src="images/companies/pxl_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-atom text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>POP-sessies</h4>
+                <p>De POP-sessies bestonden uit drie verschillende sessies, "The key to improvement", "Brein aan het werk. Niet storen!" en "POPping". In deze seminaries kregen we uitleg hoe we efficiënt en gezond kunnen (samen)werken. Het bestond uit theoretische en praktische onderdelen om op die manier de onderwerpen aan ons te verduidelijken.</p>
+                <h6>Locatie: PXL</h6>
+                <h6>Datum: 25/02/2019</h6>
+                <h6>Duur: 10 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.pxl.be" target="_blank">
+                  <img alt="logo PXL" src="images/companies/pxl_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>AariXa - Docker for Dev and Ops</h4>
+                <p>Het seminarie werd gegeven door Sven Luts, een software engineer bij AariXa. De spreker gaf een introductie over Docker en zijn onderliggende werking. Door middel van demo's werden de nodige commando's aan ons uitgelegd en gedemonstreerd.</p>
+                <h6>Locatie: PXL, B141</h6>
+                <h6>Datum: 27/02/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.aarixa.be" target="_blank">
+                  <img alt="logo AariXa" src="images/companies/aarixa_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Belfius - Introduction to Artificial Intelligence Through Practice</h4>
+                <p>We kregen een introductie tot artificiële intelligentie door Jerome Fortias, AI practice leader bij BrightKnight. Er kwamen verschillende onderwerpen aan bod zoals de geschiedenis van artificiële intelligentie, de pilaren van artificiële intelligentie, het concept NoAI en verschillende demonstraties over deze onderwerpen.</p>
+                <h6>Locatie: PXL, B151</h6>
+                <h6>Datum: 20/03/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.belfius.be" target="_blank">
+                  <img alt="logo Belfius" src="images/companies/belfius_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Eurofins - Testing met Robot Framework</h4>
+                <p>Sepp Van Cauwenbergh, technical coach bij Eurofins, gaf een zeer praktisch seminarie over het schrijven van automatische testen. Aangezien dit in kleinere groep doorging, was de mogelijkheid er om veel oefeningen te maken en deze klassikaal te overlopen, waardoor we beter tot de kern van het onderwerp konden komen.</p>
+                <h6>Locatie: PXL, Student Hub</h6>
+                <h6>Datum: 27/03/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.eurofins.be" target="_blank">
+                  <img alt="logo Eurofins" src="images/companies/eurofins_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Yappa - Piño: onder de schil, workshop introductie chatbot</h4>
+                <p>Het seminarie vond plaats in het bedrijf van Yappa, gelegen te Bilzen. Hier gaf Wesley Lancel, hub lead development bij Yappa, uitleg over Piño, de intern gebruikte chat assistant voor Slack. Met behulp van een demo werd verteld hoe Piño NLP gebruikt en hoe we op die manier zelf een chatbot konden maken.</h6>
+                <h6>Locatie: Yappa, Eikaart 6 Bilzen</h6>
+                <h6>Datum: 03/04/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.yappa.be/" target="_blank">
+                  <img alt="logo Yappa" src="images/companies/yappa_logo.png" class="rounded-circle" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Quality@Speed - Performance testing: een levensnoodzakelijk iets</h4>
+                <p>Er werd zowel een introductie tot performance als een introductie tot een performance-tool gegeven door Lisa-Marie Van Bel, functional analyst/consultant bij Quality@Speed, en Gil Vanderhoven, ICT-consultant bij Quality@Speed. Na deze introducties volgde een workshop om de geziene informatie over bijvoorbeeld Jmeter, praktisch te benaderen.</p>
+                <h6>Locatie: PXL, B241</h6>
+                <h6>Datum: 24/04/2019</h6>
+                <h6>Duur: 4 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.qualityatspeed.be" target="_blank" class="bg-light">
+                  <img alt="logo Quality@Speed" src="images/companies/quality_at_speed_logo.png" class="rounded-circle bg-primary" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Ordina - IT Security & Data Privacy awareness session</h4>
+                <p>Tom Degol en Jelle Dauwe, security consultants bij Ordina, gaven een theoretisch seminarie over information security awareness en GDPR. De aangehaalde onderwerpen waren zowel op professioneel vlak als in het privéleven nuttig. Om iedereen aandachtig te houden, werd af en toe een quiz gehouden over de geziene onderwerpen van de presentatie.</p>
+                <h6>Locatie: PXL, B151</h6>
+                <h6>Datum: 15/05/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.ordina.be" target="_blank">
+                  <img alt="logo Ordina" src="images/companies/oridna_logo.png" class="rounded-circle" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>VRT NWS - Facebook en ik</h4>
+                <p>Tim Verheyden, documentairemaker bij VRT NWS, doceerde een ontbijtseminarie. Hier bracht hij zijn onderzoek naar Facebook en hun omgang met privacy, democratie, ons welzijn, enz. aan. Ook de geschiedenis van hun ontstaan, de huidige stand van zaken en hun toekomstplannen lichtte hij ons toe.</p>
+                <h6>Locatie: PXL, Congress</h6>
+                <h6>Datum: 22/05/2019</h6>
+                <h6>Duur: 2 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.vrt.be/vrtnws" target="_blank">
+                  <img alt="logo VRT NWS" src="images/companies/vrt_nws_logo.jpg" class="rounded-circle" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-medal text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Innovatieroute - Blockchain</h4>
+                <p>De eerste dag kregen we een introductie over blockchain en wat meer informatie over Ethereum van Maurice Dalderup, een ex-PXL-student met als functie blockchain architect bij Trase. De andere twee dagen kregen we uitleg over Hyperledger Fabric en moesten we een case per twee uitwerken hierover. De laatste dag werd het seminarie gegeven door Hadrien van Durme, een blockchain consultant bij Trase.</p>
+                <h6>Locatie: Corda 7, Project Room</h6>
+                <h6>Datum: 25/09/2019 - 27/09/2019</h6>
+                <h6>Duur: 24 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.trase.be" target="_blank">
+                  <img alt="logo Trase" src="images/companies/trase_logo.jpg" class="rounded-circle" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Infofarm - Internet of Things</h4>
+                <p>Het seminarie van Inforfarm ging over IoT, een (momenteel) zeer populair onderwerp. De aangehaalde onderwerpen bestonden uit het visualiseren van sensor data, onregelmatigheidsdetectie en wijzigingsdetectie. De nadruk lag voornamelijk op het verschil in bruikbaarheid tussen verwerkte en onverwerkte data.</p>
+                <h6>Locatie: PXL, B334</h6>
+                <h6>Datum: 13/11/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://infofarm.be" target="_blank">
+                  <img alt="logo Infofarm" src="images/companies/infofarm_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Ericsson - Inleiding to 5G</h4>
+                <p>Het seminarie dat door Tijs Van den Brande en Serge Vanhoffelen, customer project managers 5G POC bij Ericsson, gegeven werd, ging niet enkel over de werking van 5G, maar ook over de geschiedenis van mobiele data, met inbegrip van de overgang van 1G naar 5G en de werking van elk van deze. Er waren geen demo's of andere praktische elementen voorzien: dit seminarie bestond enkel uit een theoretisch deel.</p>
+                <h6>Locatie: PXL, B323</h6>
+                <h6>Datum: 27/11/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.ericsson.com/" target="_blank">
+                  <img alt="logo Ericsson" src="images/companies/ericsson_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>PwC - Secure development</h4>
+                <p>Het seminarie over secure development werd opgesplitst in twee delen: een theoretisch en een praktisch deel. Initieel werd er uitleg gegeven over of er rekening gehouden kan worden met het ontwikkelen van veilige software in korte cycli, ook wel sprints genaamd. In het tweede deel konden we deze technieken toepassen in een virtuele machine dat door PwC voorbereid was.</p>
+                <h6>Locatie: PXL, B214</h6>
+                <h6>Datum: 04/12/2019</h6>
+                <h6>Duur: 3 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.pwc.be" target="_blank">
+                  <img alt="logo PwC" src="images/companies/pwc_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-globe text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Studiereis - Berlijn (Technische Universität Berlin)</h4>
+                <p>De studiereis waaraan ik heb deelgenomen vond plaats in Berlijn. Hier waren verschillende culturele activiteiten geregeld zoals een tour in de stad, een rondleiding in een gevangenis door een ex-gevangene en een tour in een luchthaven. Het geplande bezoek en de seminaries in TU Berlin zijn jammer genoeg niet door kunnen gaan.</p>
+                <h6>Locatie: Berlijn</h6>
+                <h6>Datum: 14/02/2020 - 18/03/2020</h6>
+                <h6>Duur: 30 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.tu-berlin.de/menue/home/" target="_blank">
+                  <img alt="logo TU Berlin" src="images/companies/tu_berlin_logo.svg" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-medal text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Care-athon - Ambulance Wens</h4>
+                <p>Tijdens de door PXL geörganiseerde hackathon heb ik gekozen voor de uitdaging van Ambulance Wens. Als eindresultaat werd een prototype en een (deels) uitgewerkte applicatie verwacht. Ambulance Wens vervult wensen van mensen waar het levenseinde nabij is en die niet meer mobiel zijn of medische hulp nodig hebben.</p>
+                <h6>Locatie: Corda 3, Cegeka</h6>
+                <h6>Datum: 20/02/2020 - 21/02/2020</h6>
+                <h6>Duur: 26 uur</h6>
+              </td>
+              <th>
+                <a href="https://ambulancewens.be" target="_blank">
+                  <img alt="logo Ambulance Wens" src="images/companies/ambulance_wens_logo.png" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-cog text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>LaTeX - Softwaresysteem voor het zetten van documenten</h4>
+                <p>Na veel opzoekwerk over LaTeX, kreeg ik reeds zin om het mezelf aan te leren en ermee te werken. Dit softwaresysteem gebruikte ik niet enkel om mijn eindwerk, maar ook mijn portfolio voor iTalent te schrijven. Ik legde mezelf op om deze techniek in voldoende mate onder de knie te krijgen om ze te kunnen toepassen wanneer dit nodig bleek.</p>
+                <h6>Locatie: n.v.t.</h6>
+                <h6>Datum: 24/02/2020 - 20/04/2020</h6>
+                <h6>Duur: 20 uur</h6>
+              </td>
+              <th>
+                <a href="https://www.latex-project.org/" target="_blank">
+                  <img alt="logo LaTeX" src="images/LaTeX_logo.svg" />
+                </a>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-4x fa-cog text-primary mb-3 sr-icon-3"></i>
+              </td>
+              <td>
+                <h4>Website portfolio iTalent</h4>
+                <p>Voor het vak iTalent schreef ik mijn portfolio, om zo een overzicht te krijgen van mijn ervaringen die ik heb opgedaan gedurende de afgelopen 3 jaar. Omdat ik dit portfolio ook online beschikbaar wilde hebben en om dit ook mooier te kunnen presenteren dan een tekstdocument, heb ik ook een website geschreven. Zo leerde ik een statische responsieve website te maken met Bootstrap en het te hosten met GitHub Pages. Deze technologieën had ik voordien nog niet gebruikt.</p>
+                <h6>Locatie: n.v.t.</h6>
+                <h6>Datum: 12/04/2020</h6>
+                <h6>Duur: 12 uur</h6>
+              </td>
+              <th>
+                <a href="https://getbootstrap.com/" target="_blank">
+                  <img alt="logo Bootstrap" src="images/bootstrap_logo.svg" class="rounded-circle" />
+                </a>
+              </th>
             </tr>
           </tbody>
         </table>
       </div>
+      <hr class="my-5" />
+      <div class="container">
+        <table class="table-striped table" id="#tabel2">
+          <thead>
+            <tr>
+              <th>Domein</th>
+              <th>Minimum uren</th>
+              <th>Behaalde uren</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Innovatie -->
+            <tr>
+              <th>
+                <i class="fas fa-4x fa-medal text-primary mb-3 sr-icon-2"></i>
+              </th>
+              <th>50</th>
+              <th>60</th>
+            </tr>
+            <!-- Internationalisering -->
+            <tr>
+              <th>
+                <i class="fas fa-4x fa-globe text-primary mb-3 sr-icon-4"></i>
+              </th>
+              <th>30</th>
+              <th>30</th>
+            </tr>
+            <!-- Persoonlijke ontwikkeling -->
+            <tr>
+              <th><i class="fas fa-4x fa-atom text-primary mb-3 sr-icon-4"></i></th>
+              <th>56</th>
+              <th>56</th>
+            </tr>
+            <!-- Seminaries -->
+            <tr>
+              <th>
+                <i class="fas fa-4x fa-book-reader text-primary mb-3 sr-icon-3"></i>
+              </th>
+              <th>24</th>
+              <th>29</th>
+            </tr>
+            <!-- Extra's -->
+            <tr>
+              <th>
+                <i class="fas fa-4x fa-cog text-primary mb-3 sr-icon-1"></i>
+              </th>
+              <th>/</th>
+              <th>34</th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Totaal:</th>
+              <th>160</th>
+              <th>209</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </section>
-    <!-- PORTFOLIO -->
-    <section class="bg-secondary" id="portfolio">
+    <!-- Portfolio -->
+    <section class="p-0" id="portfolio">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Portfolio</h2>
-            <hr />
-            <p class="text-faded mb-4">TODO: portfolio</p>
+          <div class="col-lg-12 mx-auto text-center">
+            <h2 class="section-heading">Portfolio</h2>
+            <hr class="my-4" />
+            <p>Een selectie van de meest interessante activiteiten die ik binnen het iTalent kader heb uitgevoerd.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-lg-6 col-sm-6">
+            <a class="portfolio-box text-center" href="activiteiten/care-athon.html">
+              <img alt="logo Ambulance Wens" class="img-fluid" src="images/companies/ambulance_wens_logo.png" />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">Innovatie</div>
+                  <div class="project-name">Care-athon - Ambulance Wens</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <a class="portfolio-box text-center" href="activiteiten/berlijn.html">
+              <img alt="logo TU Berlin" class="img-fluid center-block" src="images/companies/tu_berlin_logo.svg" />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">Internationalisering</div>
+                  <div class="project-name">Studiereis: Berlijn (Technische Universität Berlin)</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <a class="portfolio-box text-center" href="activiteiten/docker.html">
+              <img alt="logo Docker" class="img-fluid" src="images/activiteiten/docker/logo.png" />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">Seminarie</div>
+                  <div class="project-name">AariXa - Docker for Dev and Ops</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <a class="portfolio-box text-center" href="activiteiten/latex.html">
+              <img alt="logo LaTeX" class="img-fluid" src="images/LaTeX_logo.svg" />
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">Extra's</div>
+                  <div class="project-name">LaTeX - Softwaresysteem voor het zetten van documenten</div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- REFLECTIE -->
-    <section id="reflectie">
+    <!-- Eindreflectie -->
+    <section class="bg-primary" id="reflectie">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Reflectie</h2>
-            <hr />
-            <p class="text-faded mb-4">TODO: reflectie</p>
+            <h2 class="section-heading text-white">Eindreflectie</h2>
+            <hr class="light my-4" />
+            <p class="text-faded mb-4">Nu ik op het einde ben van mijn bacheloropleiding aan de Hogeschool PXL ben ik vrij zeker dat ik ga schakelen naar een masteropleiding. Dit gaat zeker een uitdaging worden, maar in mijn huidige opleiding heb ik geleerd dat zeer veel mogelijk is als ik mij er volledig op gooi.</p>
+
+            <p class="text-faded mb-4">Tijdens mijn opleiding is mij duidelijk geworden dat informatica niet enkel programmeren is maar er veel meer bij komt kijken. De sociale aspecten, die volgens de stereotypes er niet is, is enorm belangrijk en deze heb ik kunnen bemachtigen door verschillende vakken te volgen en opdrachten uit te voeren tijdens de academiejaren.</p>
+            <p class="text-faded mb-4">Door de vele groepswerken en zaken als de buitenlandse reis, ben ik veel in contact ge komen met mijn medestudenten. Hierdoor leerde ik hoe ik niet alleen professioneel met ze om moest gaan, maar ook als vrienden. Ook bijvoorbeeld de Care-athon heeft mijn mentaliteit doen wijzigen, het helpen van mensen die het effectief nodig hebben is in mijn ogen zeer belonend en brengt mij veel voldoening.</p>
+            <p class="text-faded mb-4">De afgelopen drie jaar ben ik ook heel wat veranderd in de zin van durven. In de plaats van aan zeer doordacht projecten opstellen rekening houdend met de zaken die ik al kon, stel ik nu een project op naar het resultaat dat ik wil bekomen. Dan zoek ik uit welke kennis en vaardigheden ik hier voor nodig heb en leer ik ze mezelf aan indien nodig. Zo begin ik aan projecten die veel uitdagender en leerrijker zijn dan ik een paar jaar geleden niet zou durven.</p>
+            <p class="text-faded mb-4">De studiereis naar Berlijn heeft mij cultureel wel mijn ogen open gedaan. Ik had weinig besef van hoe mensen in de oorlog geleefd hebben en wat voor vreselijke zaken er gebeurd zijn. Maar ook de heropbouw en hoe een land hier van terug kan komen was indrukwekkend. Het heeft mij anders doen kijken naar de zaken rondom mij en mijn problemen doen relativeren.</p>
+            <p class="text-faded mb-4">Het IT-project heeft mij leren samenwerken met andere specialisaties zoals een grafisch ontwerper, een projectleider, een hulpverlener enzovoort. Met al deze mensen hebben we een project kunnen maken dat toch één geheel vormt. Ik heb leren mijn kennis overbrengen naar hen en leren luisteren naar hun specialiteiten.</p>
+            <p class="text-faded mb-4">Ik heb ook leren uit mijn comfortzone te stappen door risico’s en uitdagingen aan te gaan. Zo besloot ik om een splinter nieuwe keuzetraject te volgen, genaamd AI & Robotics. Hier hadden wij als klas veel inspraak omdat de lessen nog zeer nieuw waren, onze feedback was essentieel. Het was niet de meest voor de hand liggende keuze om dit keuzetraject op te nemen, maar ik ben hier zeer tevreden over. Ik heb passies gevonden door mijn grenzen te verleggen en er volledig voor te gaan.</p>
+            <p class="text-faded mb-4">Ik zou graag iedereen aan de Hogeschool PXL willen bedanken die mij geholpen heeft doorheen mijn opleiding, de mensen die mij kennis hebben bijgebracht en zij die mij uitgedaagd hebben. Zonder hen zou ik niet staan waar ik nu zou staan en daar ben ik ze dankbaar voor.</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- CONTACT -->
-    <section class="bg-secondary" id="contact">
+    <!-- Contact -->
+    <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Contact</h2>
-            <hr />
-            <p class="text-faded mb-4">TODO: contact</p>
+            <h2 class="section-heading">Contact</h2>
+            <hr class="my-4" />
+            <p class="mb-5"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+            <p>
+              <a href="mailto:vic.segers10@gmail.com">vic.segers10@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
+            <p>
+              <a href="https://be.linkedin.com/in/vic-segers/" target="_blank">Vic Segers</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fab fa-github fa-3x mb-3 text-muted"></i>
+            <p>
+              <a href="https://github.com/VicSegers">VicSegers</a>
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.compatibility.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
-    <script src="js/main.js"></script>
+    <!-- Footer -->
+    <footer class="bg-light py-5">
+      <div class="container">
+        <div class="small text-center text-muted">Copyright © 2020 Vic Segers - De broncode is beschikbaar op
+          <a href="https://github.com/VicSegers/vicsegers.github.io" target="_blank">GitHub</a>.
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
   </body>
 </html>
